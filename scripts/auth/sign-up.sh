@@ -1,4 +1,6 @@
 #!/bin/bash
+# EMAIL="rina" PASSWORD="rina" sh scripts/auth/sign-up.sh
+# EMAIL="bruno" PASSWORD="mars" sh scripts/auth/sign-up.sh
 
 API="${API_ORIGIN:-http://localhost:4741}"
 URL_PATH="/sign-up"

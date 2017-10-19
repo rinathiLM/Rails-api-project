@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# OLDPW="rina" NEWPW="rinay" sh scripts/auth/change-password.sh
 API="${API_ORIGIN:-http://localhost:4741}"
 URL_PATH="/change-password"
 curl "${API}${URL_PATH}/${ID}" \
