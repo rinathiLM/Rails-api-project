@@ -1,7 +1,7 @@
 # DATE="2017-10-16" NAME="Mount Si" CITY="North Bend" STATE="WA" ELEVATION=5200 MILES=7.9 DURATION=04:56 DIFFICULTY=4 RATING=4 NOTES="cloudy day" sh scripts/hikes/create-hike.sh
 
 curl --include --request POST "http://localhost:4741/hikes" \
-# --header "Authorization: Token token=${TOKEN}" \
+  --header "Authorization: Token token=${TOKEN}" \
   --header "Content-Type: application/json" \
   --data '{
     "hike": {

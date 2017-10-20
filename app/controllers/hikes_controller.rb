@@ -3,10 +3,9 @@ class HikesController < ProtectedController
 
   before_action :set_hike, only: [:show, :update, :destroy]
 
-  # GET /hikes
+  # GET all /hikes
   def index
-    @hikes = Hike.all
-
+    @hikes = current_user.hikes.all
     render json: @hikes
   end
 
@@ -34,6 +33,7 @@ class HikesController < ProtectedController
   def update
     if @hike.update(hike_params)
       render json: @hike
+      # or head :no_content if I don't want user to see the update
     else
       render json: @hike.errors, status: :unprocessable_entity
     end
