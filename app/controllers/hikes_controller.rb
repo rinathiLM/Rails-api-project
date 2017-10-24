@@ -56,6 +56,6 @@ class HikesController < ProtectedController
 
     # Only allow a trusted parameter "white list" through.
     def hike_params
-      params.require(:hike).permit(:hike_date, :hike_name, :city, :state, :elevation_gain, :miles_rt, :duration, :difficulty, :rating, :notes)
+      params.require(:hike).permit(:hike_date, :hike_name, :city, :state, :elevation_gain, :miles_rt, :difficulty, :rating, :notes)
     end
 end
