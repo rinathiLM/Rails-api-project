@@ -11,7 +11,6 @@ curl --include --request POST "http://localhost:4741/hikes" \
       "state": "'"${STATE}"'",
       "elevation_gain": "'"${ELEVATION}"'",
       "miles_rt": "'"${MILES}"'",
-      "duration": "'"${DURATION}"'",
       "difficulty": "'"${DIFFICULTY}"'",
       "rating": "'"${RATING}"'",
       "notes": "'"${NOTES}"'"
@@ -25,7 +24,6 @@ curl --include --request POST "http://localhost:4741/hikes" \
   # t.string "state"
   # t.integer "elevation_gain"
   # t.float "miles_rt"
-  # t.time "duration"
   # t.integer "difficulty"
   # t.integer "rating"
   # t.string "notes"

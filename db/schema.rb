@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171019180404) do
+ActiveRecord::Schema.define(version: 20171024172312) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,7 +30,6 @@ ActiveRecord::Schema.define(version: 20171019180404) do
     t.string "state"
     t.integer "elevation_gain"
     t.float "miles_rt"
-    t.time "duration"
     t.integer "difficulty"
     t.integer "rating"
     t.string "notes"
