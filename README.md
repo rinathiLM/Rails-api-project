@@ -4,7 +4,7 @@ README
 
 'Track your Trails' is a Single Page Application that allows a user to log in and track hikes they've gone on. A user is able to create hikes, update and delete hikes they've created, and view all hikes they've gone on.
 
-This is repo is the API for the 'Track your Trails' application.
+This repo is the API for the 'Track your Trails' application.
 
 ## Link to Application
 
@@ -22,8 +22,9 @@ Link to ERD - https://drive.google.com/file/d/0By5LPJuxCHaEc2hIV2ZCZl8xOXM/view?
 
 Deployed API (using Heroku) - https://rinas-fullstack-project.herokuapp.com/
 
-# API End-Points
+### API End-Points
 
+User resource:
 | Verb   | URI Pattern            | Controller#Action |
 | ----   | ----                   | ---------- |
 | POST   | `/sign-up`             | users#signup |
@@ -31,6 +32,7 @@ Deployed API (using Heroku) - https://rinas-fullstack-project.herokuapp.com/
 | PATCH  | `/change-password/:id` | users#changepw |
 | DELETE | `/sign-out/:id`        | users#signout |
 
+Hike resource:
 | Verb   | URI Pattern            | Controller#Action |
 | ----   | ----                   | ---------- |
 | GET    | `/hikes`               | hikes#index |
@@ -40,8 +42,8 @@ Deployed API (using Heroku) - https://rinas-fullstack-project.herokuapp.com/
 
 ## Technology
 
-Ruby
-Ruby on Rails
+- Ruby
+- Ruby on Rails
 
 ## Development Process
 
