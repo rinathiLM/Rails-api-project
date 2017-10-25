@@ -2,50 +2,53 @@ README
 
 ## About the App
 
-'Track your Trails'
+'Track your Trails' is a Single Page Application that allows a user to log in and track hikes they've gone on. A user is able to create hikes, update and delete hikes they've created, and view all hikes they've gone on.
+
+This is repo is the API for the 'Track your Trails' application.
 
 ## Link to Application
 
 Track your Trails - https://rinathilm.github.io/project-2-fullstack-app/
 
-## ERD
-
-<!-- <imbed image in here> -->
-Link to ERD - https://drive.google.com/file/d/0By5LPJuxCHaEc2hIV2ZCZl8xOXM/view?usp=sharing
-
 ## Client Info
 
 Client github repo - https://github.com/rinathiLM/project-2-fullstack-app
 
-# API Info
+## ERD
+
+Link to ERD - https://drive.google.com/file/d/0By5LPJuxCHaEc2hIV2ZCZl8xOXM/view?usp=sharing
+
+## API Info
 
 Deployed API (using Heroku) - https://rinas-fullstack-project.herokuapp.com/
 
-you don't have to put curl scripts in but a list of the end points and the type of requests you can make to them.
+# API End-Points
 
-API End-Points
+| Verb   | URI Pattern            | Controller#Action |
+| ----   | ----                   | ---------- |
+| POST   | `/sign-up`             | users#signup |
+| POST   | `/sign-in`             | users#signin |
+| PATCH  | `/change-password/:id` | users#changepw |
+| DELETE | `/sign-out/:id`        | users#signout |
 
-Verb	URI Pattern	Controller#Action
-post	/sign-up	users#signup
-post	/sign-in	users#signin
-delete	/sign-out/:id	users#signout
-patch	/change-password/:id	users#changepw
-post	/giftee	giftees#create
-get	/giftee/	giftees#index
-get	/giftee/:id	giftees#show
-delete	/giftee/:id	giftees#destroy
-get	/note/:id	notes#show
-patch	/note/:id	notes#update
-get	/idea/:id	ideas#show
-post	/idea/	ideas#create
-patch	/idea/:id	ideas#update
-
-include curl requests and responses
+| Verb   | URI Pattern            | Controller#Action |
+| ----   | ----                   | ---------- |
+| GET    | `/hikes`               | hikes#index |
+| POST   | `/hikes`               | hikes#create |
+| PATCH  | `/hikes/:id`           | hikes#update |
+| DELETE | `/hikes/:id`           | hikes#destroy |
 
 ## Technology
 
-## Issues & Future Enhancements
- List unsolved problems which would be fixed in future iterations.
+Ruby
+Ruby on Rails
 
 ## Development Process
-Document your planning and tell a story about your development process and problem-solving strategy
+
+Setting up the Rails API wasn't as difficult as I thought, especially since it was my first time. The more difficult and time-consuming portion was getting the data to display and updating the UI accordingly based on user actions. I incorporated bootstrap modals and navbar functionality that was hard to use at first, trying to get a form to submit was pretty difficult for instance (then getting the modal to disappear, then the modal backdrop to disappear, ... and so on.).
+
+Although chanllenging, it was a good experience and I feel more equipped doing something similar in the future and utilizing bootstrap cabilities more freely.
+
+## Issues & Future Enhancements
+
+See client repo. Issues and enhancements on the frontend are documented there.
