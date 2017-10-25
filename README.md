@@ -25,12 +25,14 @@ Deployed API (using Heroku) - https://rinas-fullstack-project.herokuapp.com/
 ### API End-Points
 
 User resource:
+
 | Verb   | URI Pattern            | Controller#Action |
 |--------|------------------------|-------------------|
 | POST   | `/sign-up`             | users#signup      |
 | POST   | `/sign-in`             | users#signin      |
 | PATCH  | `/change-password/:id` | users#changepw    |
 | DELETE | `/sign-out/:id`        | users#signout     |
+
 
 Hike resource:
 
