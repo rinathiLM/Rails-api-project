@@ -26,19 +26,20 @@ Deployed API (using Heroku) - https://rinas-fullstack-project.herokuapp.com/
 
 User resource:
 | Verb   | URI Pattern            | Controller#Action |
-| ----   | ----                   | ---------- |
-| POST   | `/sign-up`             | users#signup |
-| POST   | `/sign-in`             | users#signin |
-| PATCH  | `/change-password/:id` | users#changepw |
-| DELETE | `/sign-out/:id`        | users#signout |
+|--------|------------------------|-------------------|
+| POST   | `/sign-up`             | users#signup      |
+| POST   | `/sign-in`             | users#signin      |
+| PATCH  | `/change-password/:id` | users#changepw    |
+| DELETE | `/sign-out/:id`        | users#signout     |
 
 Hike resource:
+
 | Verb   | URI Pattern            | Controller#Action |
-| ----   | ----                   | ---------- |
-| GET    | `/hikes`               | hikes#index |
-| POST   | `/hikes`               | hikes#create |
-| PATCH  | `/hikes/:id`           | hikes#update |
-| DELETE | `/hikes/:id`           | hikes#destroy |
+|--------|------------------------|-------------------|
+| GET    | `/hikes`               | hikes#index       |
+| POST   | `/hikes`               | hikes#create      |
+| PATCH  | `/hikes/:id`           | hikes#update      |
+| DELETE | `/hikes/:id`           | hikes#destroy     |
 
 ## Technology
 
